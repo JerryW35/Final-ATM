@@ -1,0 +1,17 @@
+<persistence>
+    <persistence-unit name="Bank_details">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>Database.Models.User</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bank_project"/>
+            <property name="javax.persistence.jdbc.user" value="bankaccess"/>
+            <property name="javax.persistence.jdbc.password" value="testpassword123"/>
+            <property name="eclipselink.logging.level" value="SEVERE"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
